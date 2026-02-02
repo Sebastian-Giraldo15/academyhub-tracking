@@ -24,6 +24,11 @@ const handleSubmit = () => {
     method: 'email'
   });
 
+  dataLayer.push({
+    event: 'login',
+    method: 'email'
+  });
+
   // Simular login exitoso
   alert('Login exitoso! (Demo)');
   router.push('/');
